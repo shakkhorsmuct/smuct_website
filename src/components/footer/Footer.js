@@ -1,14 +1,16 @@
-import { BottomNavigation, BottomNavigationAction } from "@mui/material";
+import { BottomNavigation, Box, Typography } from "@mui/material";
 import CopyrightIcon from '@mui/icons-material/Copyright';
 
 const Footer = () => {
   return (
     <>
         <BottomNavigation sx={{
-            width: 500
+          position: "fixed",
+          pl: 1,
+          bottom: 0,
         }}>
-            <BottomNavigationAction label="Copyright" value="copyright" icon={<CopyrightIcon />}>
-            </BottomNavigationAction>
+          <Box sx={{ display: "inline" }}><CopyrightIcon /></Box>
+          <Typography sx={{ display: "inline" }}>Shakkhor Das 2024</Typography>
         </BottomNavigation>
     </>
   )
