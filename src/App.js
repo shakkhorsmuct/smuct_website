@@ -1,14 +1,16 @@
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
-import './App.css';
+// project import
+import Routes from './routes';
+import ThemeCustomization from './themes';
+import ScrollTop from 'components/ScrollTop';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Footer />
-    </div>
-  );
-}
+// ==============================|| APP - THEME, ROUTER, LOCAL  ||============================== //
+
+const App = () => (
+  <ThemeCustomization>
+    <ScrollTop>
+      <Routes />
+    </ScrollTop>
+  </ThemeCustomization>
+);
 
 export default App;
